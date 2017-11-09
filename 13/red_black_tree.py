@@ -12,7 +12,7 @@ class RedBlackTree(object):
 
 	def __init__(self):
 		self.root = None
-	
+
 	def LeftRotate(self, node):
 		y = node.right
 		node.right = y.left
@@ -38,7 +38,7 @@ class RedBlackTree(object):
 				x = x.left
 			else:
 				x = x.right
-		
+
 		node.parent = y
 		if y is None:
 			self.root = Node
