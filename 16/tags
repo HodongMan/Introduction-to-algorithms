@@ -1,10 +1,24 @@
 !_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
 Activity	/home/jhd9206/바탕화면/prac/Python/IntroductionToAlgorithms/16/greedy_activity_selector.py	/^Activity = namedtuple("Activity", ("start", "end"))$/;"	v	language:Python
 ends	/home/jhd9206/바탕화면/prac/Python/IntroductionToAlgorithms/16/greedy_activity_selector.py	/^    ends = [4, 5, 6, 7, 9, 9, 10, 11, 12, 14, 16]$/;"	v	language:Python
+freq	/home/jhd9206/바탕화면/prac/Python/IntroductionToAlgorithms/16/huffman.py	/^    def freq(self):$/;"	m	language:Python	class:Node
+freq	/home/jhd9206/바탕화면/prac/Python/IntroductionToAlgorithms/16/huffman.py	/^    def freq(self, value):$/;"	m	language:Python	class:Node
 GreedyActivity	/home/jhd9206/바탕화면/prac/Python/IntroductionToAlgorithms/16/greedy_activity_selector.py	/^class GreedyActivity:$/;"	c	language:Python
 GreedyActivitySelector	/home/jhd9206/바탕화면/prac/Python/IntroductionToAlgorithms/16/greedy_activity_selector.py	/^def GreedyActivitySelector(start, finish):$/;"	f	language:Python
 greedy_activity	/home/jhd9206/바탕화면/prac/Python/IntroductionToAlgorithms/16/greedy_activity_selector.py	/^    greedy_activity = GreedyActivity(starts, ends)$/;"	v	language:Python
+huffmanNode	/home/jhd9206/바탕화면/prac/Python/IntroductionToAlgorithms/16/huffman.py	/^huffmanNode = namedtuple("huffmanNode", ("value", "freq"))$/;"	v	language:Python
 initialize	/home/jhd9206/바탕화면/prac/Python/IntroductionToAlgorithms/16/greedy_activity_selector.py	/^    def initialize(self, starts, ends):$/;"	m	language:Python	class:GreedyActivity
+makeHuffmanTree	/home/jhd9206/바탕화면/prac/Python/IntroductionToAlgorithms/16/huffman.py	/^def makeHuffmanTree(q):$/;"	f	language:Python
+Node	/home/jhd9206/바탕화면/prac/Python/IntroductionToAlgorithms/16/huffman.py	/^class Node:$/;"	c	language:Python
+pop	/home/jhd9206/바탕화면/prac/Python/IntroductionToAlgorithms/16/huffman.py	/^    def pop(self):$/;"	m	language:Python	class:PriorityQueue
+printNode	/home/jhd9206/바탕화면/prac/Python/IntroductionToAlgorithms/16/huffman.py	/^    def printNode(self):$/;"	m	language:Python	class:Node
+printPreorderTraversal	/home/jhd9206/바탕화면/prac/Python/IntroductionToAlgorithms/16/huffman.py	/^    def printPreorderTraversal(self, node):$/;"	m	language:Python	class:Node
+PriorityQueue	/home/jhd9206/바탕화면/prac/Python/IntroductionToAlgorithms/16/huffman.py	/^class PriorityQueue:$/;"	c	language:Python
+push	/home/jhd9206/바탕화면/prac/Python/IntroductionToAlgorithms/16/huffman.py	/^    def push(self, item):$/;"	m	language:Python	class:PriorityQueue
+q	/home/jhd9206/바탕화면/prac/Python/IntroductionToAlgorithms/16/huffman.py	/^    q = PriorityQueue()$/;"	v	language:Python
 selector	/home/jhd9206/바탕화면/prac/Python/IntroductionToAlgorithms/16/greedy_activity_selector.py	/^    def selector(self):$/;"	m	language:Python	class:GreedyActivity
 starts	/home/jhd9206/바탕화면/prac/Python/IntroductionToAlgorithms/16/greedy_activity_selector.py	/^    starts = [1, 3, 0, 5, 3, 5, 6, 8, 8, 2, 12]$/;"	v	language:Python
 __init__	/home/jhd9206/바탕화면/prac/Python/IntroductionToAlgorithms/16/greedy_activity_selector.py	/^    def __init__(self, starts, ends):$/;"	m	language:Python	class:GreedyActivity
+__init__	/home/jhd9206/바탕화면/prac/Python/IntroductionToAlgorithms/16/huffman.py	/^    def __init__(self):$/;"	m	language:Python	class:Node
+__init__	/home/jhd9206/바탕화면/prac/Python/IntroductionToAlgorithms/16/huffman.py	/^    def __init__(self):$/;"	m	language:Python	class:PriorityQueue
+__len__	/home/jhd9206/바탕화면/prac/Python/IntroductionToAlgorithms/16/huffman.py	/^    def __len__(self):$/;"	m	language:Python	class:PriorityQueue	file:
