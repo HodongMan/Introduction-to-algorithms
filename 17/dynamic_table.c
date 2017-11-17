@@ -61,12 +61,49 @@ void TableInsert(Table * table, int data){
     }
 }
 
+void TableDelete(Table * table){
+
+    /*
+     * 테이블의 크기보다 데이터의 개수가 1/4 낮은 경우,
+     * 테이블의 크기를 1/2로 줄인다
+     *
+     * */
+    int * temp;
+    int i;
+
+    if(table->num <= table->size / 4){
+
+	temp = (int*)malloc((sizeof(int) * table->size));
+
+	for(i = 0; i < table->num; i++){
+	    temp[i] = table->data[i];
+	}
+
+	free(table->data);
+
+	table->size /= 2;
+	table->data = (int*)malloc((sizeof(int) * table->size));
+	
+	for(i = 0; i < table->num; i++){
+	    table->data[i] = temp[i];
+	}
+
+	free(temp);
+
+    }else{
+	table->num -= 1;
+    }
+}
+
 int main()
 {
     int i;
     Table * table = makeTable();
     for(i = 0; i < 100; i++){
 	TableInsert(table, i);
+    }
+    for(i = 0; i < 30; i++){
+	TableDelete(table);
     }
     for(i = 0; i < table->num; i++){
 	printf("%d\n", table->data[i]);

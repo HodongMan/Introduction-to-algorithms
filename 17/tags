@@ -13,6 +13,7 @@ pop	/home/jhd9206/바탕화면/prac/Python/IntroductionToAlgorithms/17/MultiStac
 push	/home/jhd9206/바탕화면/prac/Python/IntroductionToAlgorithms/17/MultiStack.py	/^    def push(self, value):$/;"	m	language:Python	class:MultiStack
 size	/home/jhd9206/바탕화면/prac/Python/IntroductionToAlgorithms/17/dynamic_table.c	/^    int size;$/;"	m	language:C++	struct:__anon1	file:
 Table	/home/jhd9206/바탕화면/prac/Python/IntroductionToAlgorithms/17/dynamic_table.c	/^}Table;$/;"	t	language:C++	typeref:struct:__anon1	file:
+TableDelete	/home/jhd9206/바탕화면/prac/Python/IntroductionToAlgorithms/17/dynamic_table.c	/^void TableDelete(Table * table){$/;"	f	language:C++
 TableInsert	/home/jhd9206/바탕화면/prac/Python/IntroductionToAlgorithms/17/dynamic_table.c	/^void TableInsert(Table * table, int data){$/;"	f	language:C++
 __init__	/home/jhd9206/바탕화면/prac/Python/IntroductionToAlgorithms/17/MultiStack.py	/^    def __init__(self):$/;"	m	language:Python	class:MultiStack
 __len__	/home/jhd9206/바탕화면/prac/Python/IntroductionToAlgorithms/17/MultiStack.py	/^    def __len__(self):$/;"	m	language:Python	class:MultiStack	file:
