@@ -1,14 +1,18 @@
 !_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
-binary	/home/jhd9206/바탕화면/prac/Python/IntroductionToAlgorithms/17/binarycounter.py	/^        binary = increment(binary)$/;"	v	language:Python
-binary	/home/jhd9206/바탕화면/prac/Python/IntroductionToAlgorithms/17/binarycounter.py	/^    binary = [0] * 8$/;"	v	language:Python
+data	/home/jhd9206/바탕화면/prac/Python/IntroductionToAlgorithms/17/dynamic_table.c	/^    int * data;$/;"	m	language:C++	struct:__anon1	file:
 data	/home/jhd9206/바탕화면/prac/Python/IntroductionToAlgorithms/17/MultiStack.py	/^    def data(self):$/;"	m	language:Python	class:MultiStack
 data	/home/jhd9206/바탕화면/prac/Python/IntroductionToAlgorithms/17/MultiStack.py	/^    def data(self, value):$/;"	m	language:Python	class:MultiStack
-increment	/home/jhd9206/바탕화면/prac/Python/IntroductionToAlgorithms/17/binarycounter.py	/^def increment(array):$/;"	f	language:Python
 isEmpty	/home/jhd9206/바탕화면/prac/Python/IntroductionToAlgorithms/17/MultiStack.py	/^    def isEmpty(self):$/;"	m	language:Python	class:MultiStack
+main	/home/jhd9206/바탕화면/prac/Python/IntroductionToAlgorithms/17/dynamic_table.c	/^int main()$/;"	f	language:C++
+makeTable	/home/jhd9206/바탕화면/prac/Python/IntroductionToAlgorithms/17/dynamic_table.c	/^Table* makeTable(){$/;"	f	language:C++
 multi	/home/jhd9206/바탕화면/prac/Python/IntroductionToAlgorithms/17/MultiStack.py	/^    multi = MultiStack()$/;"	v	language:Python
 multiPop	/home/jhd9206/바탕화면/prac/Python/IntroductionToAlgorithms/17/MultiStack.py	/^    def multiPop(self, count):$/;"	m	language:Python	class:MultiStack
 MultiStack	/home/jhd9206/바탕화면/prac/Python/IntroductionToAlgorithms/17/MultiStack.py	/^class MultiStack:$/;"	c	language:Python
+num	/home/jhd9206/바탕화면/prac/Python/IntroductionToAlgorithms/17/dynamic_table.c	/^    int num;$/;"	m	language:C++	struct:__anon1	file:
 pop	/home/jhd9206/바탕화면/prac/Python/IntroductionToAlgorithms/17/MultiStack.py	/^    def pop(self):$/;"	m	language:Python	class:MultiStack
 push	/home/jhd9206/바탕화면/prac/Python/IntroductionToAlgorithms/17/MultiStack.py	/^    def push(self, value):$/;"	m	language:Python	class:MultiStack
+size	/home/jhd9206/바탕화면/prac/Python/IntroductionToAlgorithms/17/dynamic_table.c	/^    int size;$/;"	m	language:C++	struct:__anon1	file:
+Table	/home/jhd9206/바탕화면/prac/Python/IntroductionToAlgorithms/17/dynamic_table.c	/^}Table;$/;"	t	language:C++	typeref:struct:__anon1	file:
+TableInsert	/home/jhd9206/바탕화면/prac/Python/IntroductionToAlgorithms/17/dynamic_table.c	/^void TableInsert(Table * table, int data){$/;"	f	language:C++
 __init__	/home/jhd9206/바탕화면/prac/Python/IntroductionToAlgorithms/17/MultiStack.py	/^    def __init__(self):$/;"	m	language:Python	class:MultiStack
 __len__	/home/jhd9206/바탕화면/prac/Python/IntroductionToAlgorithms/17/MultiStack.py	/^    def __len__(self):$/;"	m	language:Python	class:MultiStack	file:
