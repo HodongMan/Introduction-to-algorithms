@@ -1,0 +1,7 @@
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+B_Tree	/home/jhd9206/바탕화면/prac/Python/IntroductionToAlgorithms/18/b-tree.py	/^class B_Tree():$/;"	c	language:Python
+initialize	/home/jhd9206/바탕화면/prac/Python/IntroductionToAlgorithms/18/b-tree.py	/^    def initialize():$/;"	m	language:Python	class:B_Tree
+Node	/home/jhd9206/바탕화면/prac/Python/IntroductionToAlgorithms/18/b-tree.py	/^class Node:$/;"	c	language:Python
+search	/home/jhd9206/바탕화면/prac/Python/IntroductionToAlgorithms/18/b-tree.py	/^    def search(self, value):$/;"	m	language:Python	class:B_Tree
+__init__	/home/jhd9206/바탕화면/prac/Python/IntroductionToAlgorithms/18/b-tree.py	/^    def __init__(self, root=None):$/;"	m	language:Python	class:B_Tree
+__init__	/home/jhd9206/바탕화면/prac/Python/IntroductionToAlgorithms/18/b-tree.py	/^    def __init__(self, value):$/;"	m	language:Python	class:Node
