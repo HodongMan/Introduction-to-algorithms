@@ -21,6 +21,7 @@ Heap* makeFibHeap(){
     Heap* new_heap = (Heap*)malloc(sizeof(Heap));
     
     new_heap->root = (Node**)malloc(sizeof(Node*) * MAX_HEAP_ROOT_COUNT);
+    new_heap->root[0] = NULL;
     new_heap->count = 0;
     new_heap->min = NULL;
 
@@ -58,11 +59,34 @@ Heap* UnionFibHeap(Heap* heap1, Heap* heap2){
 
     Heap* new_heap = makeFibHeap();
     new_heap->min = heap1->min;
-    //h2 root list add h root list
+
+    addHeapList(new_heap, heap1, heap2);
+    
     if((heap1->min == NULL) || ((heap2->min != NULL) && (heap2->min->value < heap1->min->value))){
 	new_heap->min = heap2->min;
     }
 
-    // count increase in list add
+    free(heap1);
+    free(heap2);
+
     return new_heap;
+}
+
+static inline void addHeapList(Heap* new_heap, Heap* heap1, Heap* heap2){
+
+    int i;
+    int temp_index = 0;
+
+    for(i = 0; i < heap1->count; i++){
+	
+	new_heap->root[temp_index] = heap1->root[i];
+	temp_index += 1;
+    }
+
+    for(i = 0; i < heap2->count; i++){
+	new_heap->root[temp_index] = heap2->root[i];
+	temp_index += 1;
+    }
+
+    new_heap->count = temp_index;
 }

@@ -2,7 +2,7 @@
 #define _FIB_HEAP_H__
 
 
-#define MAX_HEAP_ROOT_COUNT 10
+#define MAX_HEAP_ROOT_COUNT 100
 
 
 typedef enum{
@@ -39,6 +39,6 @@ Heap* makeFibHeap();
 void FibHeapInsert(Heap* heap, Node* x);
 Node* FindMeanHeap(Heap* heap);
 Heap* UnionFibHeap(Heap* heap1, Heap* heap2);
-
+static inline void addHeapList(Heap* new_heap, Heap* heap1, Heap* heap2);
 
 #endif
