@@ -46,3 +46,27 @@ INSERTION_SORT( A )
 
 
 #### 연습문제
+
+## 2.2 알고리즘의 분석
+
+알고리즘의 분석은 그 알고리즘을 실행하는 데 필요한 자원을 예측하는 것을 의미 한다. 대부분의 경우에 측정 대상은 계산 시간이다.
+
+### 삽입 정렬의 분석
+
+입력 크기에 대한 가장 정확한 개념은 주어진 문제에 따라 다르다. 정렬이나 이산 푸리에 변환 계산과 같은 입력이 많은 문제에서 가장 자연스러운 척도는 입력 항목의 개수이다.
+
+어떤 입력에 대한 알고리즘의 수행시간은 기본 연산 개수 또는 실행된 단계의 횟수를 말한다.
+
+먼저 INSERTION-SORT 프로시저를 각 명령문의 실행에 따른 시간 비용과 실행 횟수를 먼저 고려해 살펴본다. n = A.length 일때 t[j]를 j = 2, 3, ..., n인 각 경우에 대해 5행에서 while 루프의 검사가 실행되는 횟수라고 하자. for나 while 루프가 일반적인 방법으로 종료된다고 하면 검사는 그 루프의 바디 부분과 한번 더 실행된다. 
+
+```
+INSERTION_SORT( A )                                     cost        times
+1   for j = 2 to A.length                                c1          n
+2       key = A[j]                                       c2          n - 1
+3       // A[j]를 정렬된 배열 A[1.. j - 1]에 삽입한다       0          n - 1
+4       i = j - 1                                        c4          n - 1
+5       while i > 0 그리고 A[i] > key                     c5         [](https://latex.codecogs.com/png.latex?\sum_{j=2}^{n}t_j)
+6           A[i + 1] = a[i]                              c6         [](https://latex.codecogs.com/png.latex?\sum_{j=2}^{n}(t_j-1))
+7           i = i - 1                                    c7          [](https://latex.codecogs.com/png.latex?\sum_{j=2}^{n}(t_j-1))
+8       A[i + 1] = key                                   c8          n - 1
+```
