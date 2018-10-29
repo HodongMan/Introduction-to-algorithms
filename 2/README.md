@@ -71,4 +71,4 @@ INSERTION_SORT( A )                                     cost        times
 8       A[i + 1] = key                                   c8          n - 1
 ```
 
-![](https://latex.codecogs.com/png.latex?2^{2^\sin{n}})
+![](https://latex.codecogs.com/png.latex?\sum_{j=2}^{n}t_j)
