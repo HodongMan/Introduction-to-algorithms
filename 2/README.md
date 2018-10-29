@@ -66,8 +66,8 @@ INSERTION_SORT( A )                                     cost        times
 3       // A[j]를 정렬된 배열 A[1.. j - 1]에 삽입한다       0          n - 1
 4       i = j - 1                                        c4          n - 1
 5       while i > 0 그리고 A[i] > key                     c5         ![](https://latex.codecogs.com/png.latex?\sum_{j=2}^{n}t_j)
-6           A[i + 1] = a[i]                              c6         ![](https://latex.codecogs.com/png.latex?\sum_{j=2}^{n}(t_j-1))
-7           i = i - 1                                    c7          ![](https://latex.codecogs.com/png.latex?\sum_{j=2}^{n}(t_j-1))
+6           A[i + 1] = a[i]                              c6          ![](https://latex.codecogs.com/png.latex?\sum_{j=2}^{n}(t_j-1)
+7           i = i - 1                                    c7          ![](https://latex.codecogs.com/png.latex?\sum_{j=2}^{n}(t_j-1)
 8       A[i + 1] = key                                   c8          n - 1
 ```
 
