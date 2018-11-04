@@ -71,11 +71,26 @@ INSERTION_SORT( A )                                     cost        times
 8       A[i + 1] = key
 ```
 
-line 1 cost ![](https://latex.codecogs.com/png.latex?\c_1) times ![](https://latex.codecogs.com/png.latex?\n)
-line 2 cost ![](https://latex.codecogs.com/png.latex?\c_2) times ![](https://latex.codecogs.com/png.latex?\n-1)
-line 3 cost ![](https://latex.codecogs.com/png.latex?\0) times ![](https://latex.codecogs.com/png.latex?\n-1)
-line 4 cost ![](https://latex.codecogs.com/png.latex?\c_4) times ![](https://latex.codecogs.com/png.latex?\n-1)
-line 5 cost ![](https://latex.codecogs.com/png.latex?\c_5) times ![](https://latex.codecogs.com/png.latex?\sum_{j=2}^{n}t_j)
-line 6 cost ![](https://latex.codecogs.com/png.latex?\c_6) times ![](https://latex.codecogs.com/png.latex?\sum_{j=2}^{n}(t_j-1))
-line 7 cost ![](https://latex.codecogs.com/png.latex?\c_7) times ![](https://latex.codecogs.com/png.latex?\sum_{j=2}^{n}(t_j-1))
-line 8 cost ![](https://latex.codecogs.com/png.latex?\c_8) times ![](https://latex.codecogs.com/png.latex?\n-1)
+line 1 cost ![](https://latex.codecogs.com/png.latex?\c_1) 
+times ![](https://latex.codecogs.com/png.latex?\n)
+
+line 2 cost ![](https://latex.codecogs.com/png.latex?\c_2) 
+times ![](https://latex.codecogs.com/png.latex?\n-1)
+
+line 3 cost ![](https://latex.codecogs.com/png.latex?\0) 
+times ![](https://latex.codecogs.com/png.latex?\n-1)
+
+line 4 cost ![](https://latex.codecogs.com/png.latex?\c_4) 
+times ![](https://latex.codecogs.com/png.latex?\n-1)
+
+line 5 cost ![](https://latex.codecogs.com/png.latex?\c_5) 
+times ![](https://latex.codecogs.com/png.latex?\sum_{j=2}^{n}t_j)
+
+line 6 cost ![](https://latex.codecogs.com/png.latex?\c_6) 
+times ![](https://latex.codecogs.com/png.latex?\sum_{j=2}^{n}(t_j-1))
+
+line 7 cost ![](https://latex.codecogs.com/png.latex?\c_7) 
+times ![](https://latex.codecogs.com/png.latex?\sum_{j=2}^{n}(t_j-1))
+
+line 8 cost ![](https://latex.codecogs.com/png.latex?\c_8) 
+times ![](https://latex.codecogs.com/png.latex?\n-1)
