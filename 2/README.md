@@ -59,15 +59,23 @@ INSERTION_SORT( A )
 
 먼저 INSERTION-SORT 프로시저를 각 명령문의 실행에 따른 시간 비용과 실행 횟수를 먼저 고려해 살펴본다. n = A.length 일때 t[j]를 j = 2, 3, ..., n인 각 경우에 대해 5행에서 while 루프의 검사가 실행되는 횟수라고 하자. for나 while 루프가 일반적인 방법으로 종료된다고 하면 검사는 그 루프의 바디 부분과 한번 더 실행된다. 
 
+```
 INSERTION_SORT( A )                                     cost        times
-1   for j = 2 to A.length                                c1          n
-2       key = A[j]                                       c2          n - 1
-3       // A[j]를 정렬된 배열 A[1.. j - 1]에 삽입한다       0          n - 1
-4       i = j - 1                                        c4          n - 1
-5       while i > 0 그리고 A[i] > key                     c5         ![](https://latex.codecogs.com/png.latex?\sum_{j=2}^{n}t_j)
-6           A[i + 1] = a[i]                              c6          ![](https://latex.codecogs.com/png.latex?\sum_{j=2}^{n}(t_j-1)
-7           i = i - 1                                    c7          ![](https://latex.codecogs.com/png.latex?\sum_{j=2}^{n}(t_j-1)
-8       A[i + 1] = key                                   c8          n - 1
+1   for j = 2 to A.length
+2       key = A[j]
+3       // A[j]를 정렬된 배열 A[1.. j - 1]에 삽입한다
+4       i = j - 1 
+5       while i > 0 그리고 A[i] > key
+6           A[i + 1] = a[i]
+7           i = i - 1    
+8       A[i + 1] = key
+```
 
-
-![](https://latex.codecogs.com/png.latex?\sum_{j=2}^{n}t_j)
+line 1 cost ![](https://latex.codecogs.com/png.latex?\c_1) times ![](https://latex.codecogs.com/png.latex?\n)
+line 2 cost ![](https://latex.codecogs.com/png.latex?\c_2) times ![](https://latex.codecogs.com/png.latex?\n-1)
+line 3 cost ![](https://latex.codecogs.com/png.latex?\0) times ![](https://latex.codecogs.com/png.latex?\n-1)
+line 4 cost ![](https://latex.codecogs.com/png.latex?\c_4) times ![](https://latex.codecogs.com/png.latex?\n-1)
+line 5 cost ![](https://latex.codecogs.com/png.latex?\c_5) times ![](https://latex.codecogs.com/png.latex?\sum_{j=2}^{n}t_j)
+line 6 cost ![](https://latex.codecogs.com/png.latex?\c_6) times ![](https://latex.codecogs.com/png.latex?\sum_{j=2}^{n}(t_j-1))
+line 7 cost ![](https://latex.codecogs.com/png.latex?\c_7) times ![](https://latex.codecogs.com/png.latex?\sum_{j=2}^{n}(t_j-1))
+line 8 cost ![](https://latex.codecogs.com/png.latex?\c_8) times ![](https://latex.codecogs.com/png.latex?\n-1)
